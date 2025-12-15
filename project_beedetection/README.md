@@ -1,10 +1,22 @@
+## Training Overview
+
+Altogether, we trained the YOLOv10 model four times. Initial experiments conducted before and after data augmentation showed that the model frequently confused worker bees with the background. Based on these observations, we decided to manually review and correct the dataset instead of relying solely on automatic image splitting.
+
+After manual correction, the training results are organized into the following folders:
+
+- yolov10n_200epochs  
+  - Trained on a manually fixed but still imbalanced dataset
+
+- yolov10x_augm_200epochs  
+  - Trained on a manually fixed and balanced dataset
+
 ## Notebooks — how to run
 
 Two main notebooks prepare and balance the dataset before training:  
 - 01_bee_detection_preprocess.ipynb — convert LabelMe → YOLO and slice 3840×1080 images into 3 tiles (1280×1080).  
 - 02_bee_detection_augmentation.ipynb — extract drone crops, augment them, paste into training images and rebalance Worker:Drone ratio.
 
-Important: tiles are 1280×1080 — always train with imgsz=1280.
+Important: tiles are 1280×1080 — always train with **imgsz=1280**.
 
 ---
 
