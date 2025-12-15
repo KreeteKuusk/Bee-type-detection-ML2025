@@ -1,8 +1,3 @@
-# Bee-classification-ML2025
-This is a project for Machine Learning course in Unviersity of Tartu
-
-Includes jupyter notebooks for detecting Worker vs Drone bees from video frames. The pipeline augments the unbalanced training data, slices images into tiles, and trains a YOLOv10 model.
-
 ## Notebooks — how to run
 
 Two main notebooks prepare and balance the dataset before training:  
