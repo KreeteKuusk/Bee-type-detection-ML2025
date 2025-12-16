@@ -1,5 +1,5 @@
 # 🐝 Bee-detection-ML2025
-This repository presents a machine learning pipeline for **automatic detection of worker and drone bees from video frames**. The workflow focuses on handling severe class imbalance, large-scale image preprocessing, and comparative evaluation of modern object detection architectures, with **YOLOv10** selected for final experimentation.
+This project is provided by Gratheon. This repository presents a machine learning pipeline for **automatic detection of worker and drone bees from video frames**. The workflow focuses on handling severe class imbalance, large-scale image preprocessing, and comparative evaluation of modern object detection architectures, with **YOLOv10** selected for final experimentation.
 
 ### Repository Structure
 
